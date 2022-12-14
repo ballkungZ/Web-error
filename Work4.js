@@ -6,7 +6,7 @@ app.get('/',(req,res) =>{
 })
 
 app.get('*',(req,res)=>{
-    res.send('Error : 404 Page Not Found')
+    res.sendFile(__dirname + '/Web_error/Work4_Error')
 })
 
 app.listen(3000, ()=>{
